@@ -1,0 +1,15 @@
+﻿<Window x:Class="AOMD2Collector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AOMD2 Collector Research Version" Height="518" Width="896" Closing="Window_Closing" Loaded="Window_Loaded" xmlns:my="clr-namespace:Microsoft.Samples.Kinect.WpfViewers;assembly=Microsoft.Samples.Kinect.WpfViewers" ResizeMode="NoResize">
+    <Grid>
+        <Button Content="Set Tilt" Height="23" HorizontalAlignment="Left" Margin="794,34,0,0" Name="amTiltBtn" VerticalAlignment="Top" Width="75" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="659,35,0,0" Name="amTiltBox" VerticalAlignment="Top" Width="120" BorderThickness="2" />
+        <Image Height="480" HorizontalAlignment="Left" Name="amImage" Stretch="Fill" VerticalAlignment="Top" Width="640" />
+        <my:KinectSensorChooser HorizontalAlignment="Left" Margin="151,66,0,0" Name="amChooser" VerticalAlignment="Top" Width="328" />
+        <Button Content="Start..." Height="23" HorizontalAlignment="Left" Margin="704,84,0,0" Name="amBtnStart" VerticalAlignment="Top" Width="75" Click="amBtnStart_Click" />
+        <Button Content="Stop" Height="23" HorizontalAlignment="Left" Margin="794,84,0,0" Name="amBtnStop" VerticalAlignment="Top" Width="75" Click="amBtnStop_Click" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="704,126,0,0" Name="amTimeDisplay" Text="--:--:--" VerticalAlignment="Top" Width="165" Background="#FFC6FF83" />
+        <Border BorderBrush="#FFD8D8D8" BorderThickness="1" Height="23" HorizontalAlignment="Left" Margin="704,126,0,0" Name="border1" VerticalAlignment="Top" Width="165" />
+    </Grid>
+</Window>
